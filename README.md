@@ -12,13 +12,13 @@
 ```
 {
   "mcpServers": {
-    "mcp_calculator_kel": {
+    "mcp-fofa": {
         "command": "uv",
         "args": [
             "run",
             "python",
             "main.py"
-        ],
+        ]
       }
   }
 }
