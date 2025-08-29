@@ -12,12 +12,28 @@
 ```
 {
   "mcpServers": {
-    "mcp-fofa": {
-        "command": "uv",
+    "mcp_fofa": {
+      "isActive": true,
+      "name": "calculator",
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/xiezi/explore/mcp-fofa/src",  # 替换为自己的路径
+        "run",
+        "-m",
+        "mcp_fofa"
+      ]
+      }
+  }
+}
+
+{
+  "mcpServers": {
+    "mcp_fofa": {
+        "command": "uvx",
         "args": [
-            "run",
-            "python",
-            "main.py"
+          "mcp_fofa@latest"
         ]
       }
   }
